@@ -1,3 +1,6 @@
+import barbeariaScreenshot from "../assets/screenshots/barbearia-garcia.png"
+import estoqueScreenshot from "../assets/screenshots/estoque.png"
+
 export interface Project {
   id: string
   name: string
@@ -33,7 +36,7 @@ export const projects: Project[] = [
     liveUrl: "https://stock-frontend-dun-eight.vercel.app/",
     githubUrl: "https://github.com/xCaio/stock-frontend",
     screenshotAlt: "Screenshot do Sistema de Estoque",
-    screenshotSrc: "/src/assets/screenshots/estoque.png"
+    screenshotSrc: estoqueScreenshot
   },
   {
     id: "barbearia-garcia",
@@ -44,6 +47,6 @@ export const projects: Project[] = [
     liveUrl: "https://barbearia-garcia.vercel.app/",
     githubUrl: "https://github.com/xCaio/barber",
     screenshotAlt: "Screenshot do site Barbearia Garcia",
-    screenshotSrc: "/src/assets/screenshots/barbearia-garcia.png"
+    screenshotSrc: barbeariaScreenshot
   },
 ]
