@@ -21,7 +21,7 @@ export function ScreenshotPlaceholder({
 
   return (
     <div
-      className={`flex aspect-[16/10] w-full items-center justify-center border border-dashed border-border bg-surface ${className}`}
+      className={`flex w-full items-center justify-center border border-dashed border-border bg-surface ${className}`}
       role="img"
       aria-label={alt}
     >
