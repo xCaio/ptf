@@ -14,7 +14,7 @@ export function ScreenshotPlaceholder({
       <img
         src={src}
         alt={alt}
-        className={`w-full border border-border ${className}`}
+        className={`block w-full rounded-md border border-border ${className}`}
       />
     )
   }

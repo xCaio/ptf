@@ -6,7 +6,7 @@ interface SectionHeadingProps {
 export function SectionHeading({ title, className = "" }: SectionHeadingProps) {
   return (
     <h2
-      className={`mb-8 text-lg font-medium tracking-tight text-text ${className}`}
+      className={`mb-8 text-2xl font-medium tracking-tight text-text md:text-3xl ${className}`}
     >
       {title}
     </h2>

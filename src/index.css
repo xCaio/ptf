@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
 
-  --color-bg: #0d0d0d;
-  --color-surface: #151515;
-  --color-border: #262626;
+  --color-bg: #10100f;
+  --color-surface: #191916;
+  --color-border: #30302c;
 
   --color-text: #f2f2f2;
   --color-text-muted: #a0a0a0;
   --color-text-subtle: #666666;
 
-  --color-accent: #d6a85f;
+  --color-accent: #d9ac66;
 }
 
 html {
@@ -24,6 +24,12 @@ body {
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }
 
 ::selection {

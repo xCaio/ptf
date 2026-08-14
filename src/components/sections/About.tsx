@@ -2,11 +2,11 @@ import { SectionHeading } from "../ui/SectionHeading"
 
 export function About() {
   return (
-    <section id="sobre" className="py-20 md:py-28 border-t border-border">
-      <div className="mx-auto max-w-3xl px-6">
+    <section id="sobre" className="border-t border-border py-20 md:py-28">
+      <div className="mx-auto grid max-w-5xl gap-8 px-6 md:grid-cols-[.7fr_1.3fr] md:gap-16">
         <SectionHeading title="Sobre mim" />
 
-        <div className="space-y-4 text-text-muted leading-relaxed max-w-xl">
+        <div className="max-w-xl space-y-4 leading-relaxed text-text-muted">
           <p>
             Atualmente trabalho como Analista de Suporte e estou direcionando minha carreira para o desenvolvimento de software.
           </p>

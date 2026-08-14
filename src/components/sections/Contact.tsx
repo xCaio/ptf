@@ -1,23 +1,19 @@
 import { social } from "../../data/social"
 import { SectionHeading } from "../ui/SectionHeading"
-import { Button } from "../ui/Button"
 
 export function Contact() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-  }
-
   return (
-    <section id="contato" className="py-20 md:py-28 border-t border-border">
-      <div className="mx-auto max-w-3xl px-6">
+    <section id="contato" className="border-t border-border py-20 md:py-28">
+      <div className="mx-auto max-w-5xl px-6">
         <SectionHeading title="Vamos conversar" />
 
-        <p className="text-text-muted leading-relaxed mb-8 max-w-xl">
+        <p className="mb-8 max-w-xl text-text-muted leading-relaxed">
           Estou aberto a oportunidades, projetos e conversas sobre
           desenvolvimento.
         </p>
 
-        <div className="flex items-center gap-6 text-sm mb-12">
+        <a href={social.email} className="mb-10 inline-block text-xl text-text underline decoration-accent decoration-2 underline-offset-8 transition-colors hover:text-accent md:text-2xl">caiosantos1703@gmail.com</a>
+        <div className="flex items-center gap-6 text-sm">
           <a
             href={social.github}
             target="_blank"
@@ -42,53 +38,6 @@ export function Contact() {
           </a>
         </div>
 
-        <form onSubmit={handleSubmit} className="max-w-md space-y-4">
-          <div>
-            <label htmlFor="name" className="sr-only">
-              Nome
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Nome"
-              className="w-full border border-border bg-surface px-3 py-2 text-sm text-text placeholder:text-text-subtle focus:outline-none focus:border-accent transition-colors duration-150"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="email" className="sr-only">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Email"
-              className="w-full border border-border bg-surface px-3 py-2 text-sm text-text placeholder:text-text-subtle focus:outline-none focus:border-accent transition-colors duration-150"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="message" className="sr-only">
-              Mensagem
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              rows={4}
-              placeholder="Mensagem"
-              className="w-full border border-border bg-surface px-3 py-2 text-sm text-text placeholder:text-text-subtle focus:outline-none focus:border-accent transition-colors duration-150 resize-none"
-            />
-          </div>
-
-          <Button type="submit" variant="primary">
-            Enviar
-          </Button>
-        </form>
       </div>
     </section>
   )

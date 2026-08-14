@@ -14,7 +14,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-bg">
-      <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <a
           href="#inicio"
           className="group text-lg font-medium tracking-tight text-text hover:text-accent transition-colors duration-150"
