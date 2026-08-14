@@ -1,4 +1,4 @@
-import { ArrowDownRight, Github } from "lucide-react"
+import { ArrowDownRight, GitFork } from "lucide-react"
 import { Button } from "../ui/Button"
 import { social } from "../../data/social"
 import heroImage from "../../assets/hero.png"
@@ -13,7 +13,7 @@ export function Hero() {
           <p className="mt-7 max-w-xl text-base leading-relaxed text-text-muted md:text-lg">Desenvolvo APIs e aplicações web com Python, FastAPI, PostgreSQL e React. Meu foco é transformar problemas reais em sistemas simples, rápidos e confiáveis.</p>
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <Button href="#projetos" variant="primary">Ver projetos <ArrowDownRight className="h-4 w-4" aria-hidden="true" /></Button>
-            <Button href={social.github} variant="secondary" target="_blank" rel="noopener noreferrer"><Github className="h-4 w-4" aria-hidden="true" /> GitHub</Button>
+            <Button href={social.github} variant="secondary" target="_blank" rel="noopener noreferrer"><GitFork className="h-4 w-4" aria-hidden="true" /> GitHub</Button>
           </div>
         </div>
         <div className="relative mx-auto w-48 md:mx-0 md:w-full">

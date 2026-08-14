@@ -1,4 +1,4 @@
-import { ArrowUpRight, Github } from "lucide-react"
+import { ArrowUpRight, GitFork } from "lucide-react"
 import { projects } from "../../data/projects"
 import { ScreenshotPlaceholder } from "../ui/ScreenshotPlaceholder"
 import { SectionHeading } from "../ui/SectionHeading"
@@ -32,7 +32,7 @@ export function Projects() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-text-muted transition-colors hover:text-text"
                   >
-                    <Github className="h-3.5 w-3.5" /> Código
+                    <GitFork className="h-3.5 w-3.5" /> Código
                   </a>
                 )}
                 {project.liveUrl && (
