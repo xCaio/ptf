@@ -1,5 +1,6 @@
 import barbeariaScreenshot from "../assets/screenshots/barbearia-garcia.png"
 import estoqueScreenshot from "../assets/screenshots/estoque.png"
+import zebraPrintManagerScreenshot from "../assets/screenshots/zebraPrintManager.png"
 
 export interface Project {
   id: string
@@ -15,7 +16,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "estoque",
+    id: "01",
     name: "Estoque Vallourec",
     description:
       "Sistema web desenvolvido para controle de produtos, estoque e movimentações, com API em FastAPI, PostgreSQL e frontend em React.",
@@ -39,7 +40,7 @@ export const projects: Project[] = [
     screenshotSrc: estoqueScreenshot
   },
   {
-    id: "barbearia-garcia",
+    id: "02",
     name: "Barbearia Garcia",
     description:
       "Site para uma barbearia local, com apresentação dos serviços, identidade visual e layout responsivo.",
@@ -49,4 +50,15 @@ export const projects: Project[] = [
     screenshotAlt: "Screenshot do site Barbearia Garcia",
     screenshotSrc: barbeariaScreenshot
   },
+  {
+    id: "03",
+    name: "ZPL Printer Manager",
+    description:
+      "Sistema Web para impressão de etiquetas em impressoras Zebra, com layout e campos personalizados pelo usuário",
+    technologies: ["React", "TypeScript", "CSS", "Python", "FastAPI", "PostgreSQL"],
+    liveUrl: "http://localhost:5173/",
+    githubUrl: "https://github.com/xCaio/zebra-printer-manager",
+    screenshotAlt: "Screenshot do projeto Zebra Printer Manager",
+    screenshotSrc: zebraPrintManagerScreenshot
+  }
 ]

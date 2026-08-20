@@ -19,7 +19,7 @@ export function Projects() {
               </div>
               <div className="px-2 pt-6 pb-3">
                 <div className="mb-3 flex items-start justify-between gap-4">
-                  <div><p className="mb-2 text-xs font-medium tracking-[0.14em] text-accent">{project.id === "estoque" ? "01" : "02"}</p><h3 className="text-xl font-medium tracking-tight text-text">{project.name}</h3></div>
+                  <div><p className="mb-2 text-xs font-medium tracking-[0.14em] text-accent">{project.id}</p><h3 className="text-xl font-medium tracking-tight text-text">{project.name}</h3></div>
                   {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" aria-label={`Abrir ${project.name}`} className="mt-1 rounded p-1 text-text-muted transition-colors hover:text-accent"><ArrowUpRight className="h-5 w-5" /></a>}
                 </div>
                 <p className="min-h-20 text-sm leading-relaxed text-text-muted">{project.description}</p>
