@@ -12,7 +12,7 @@ export function Contact() {
           desenvolvimento.
         </p>
 
-        <a href={social.email} className="mb-10 inline-block text-xl text-text underline decoration-accent decoration-2 underline-offset-8 transition-colors hover:text-accent md:text-2xl">caiosantos1703@gmail.com</a>
+        <a href={social.email} className="mb-10 inline-block text-xl text-text underline decoration-accent decoration-2 underline-offset-8 transition-colors hover:text-accent md:text-2xl">me@cain.dev.br</a>
         <div className="flex items-center gap-6 text-sm">
           <a
             href={social.github}
